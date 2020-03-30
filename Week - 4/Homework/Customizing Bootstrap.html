@@ -9,6 +9,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Main CSS -->
+  <link href="main.css" rel="stylesheet">
 
   <title>Customizing Bootstrap</title>
 
@@ -19,7 +21,6 @@
     background-position: center;
   }
 
-
   </style>
 
 </head>
@@ -28,7 +29,7 @@
   <!--Jumbotron -->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-2 font-weight-bolder">STARBUCKS COFFEE</h1>
+      <h1 class="display-2 font-weight-bolder">Hello World</h1>
     </div>
   </div>
 
@@ -56,7 +57,11 @@
   <!-- End Nav Bar -->
 
   <!-- Cards -->
-  <div class="card" style="width: 18rem;">
+  <div class="container">
+
+  <div class="card-deck">
+
+  <div class="card col-sm-12 col-md-6 col-lg-3 order-sm-1 order-md-1">
     <div class="card-body">
        <h5 class="card-title">Card title</h5>
        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -66,7 +71,7 @@
     </div>      
   </div>
 
-  <div class="card" style="width: 18rem;">
+  <div class="card col-sm-12 col-md-6 col-lg-3 order-sm-2 order-md-2">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -76,15 +81,29 @@
     </div>
   </div>
 
-  <div class="card" style="width: 18rem;">
+  <div class="card col-sm-12 col-md-6 col-lg-3 order-sm-3 order-md-3">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       <a href="#" class="card-link">Card link</a>
       <a href="#" class="card-link">Another link</a>
-    </div>    
+    </div>
+  </div>
 
+  <div class="card col-sm-12 col-md-6 col-lg-3 order-sm-4 order-md-4">
+    <div class="card-body">
+       <h5 class="card-title">Card title</h5>
+       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+       <a href="#" class="card-link">Card link</a>
+       <a href="#" class="card-link">Another link</a>
+    </div>      
+  </div>
+
+  </div>
+
+  </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
