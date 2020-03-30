@@ -1,21 +1,32 @@
  body {
- 	background-color: #DDD1C7;
+ 	background-color: #FFEAE5;
  }
 
  P {
  	font-family: "Roboto" !important;
  	font-size: 18px;
- 	color: #1D3557;
+ 	color: #875645;
  }
 
  h1 {
  	font-family: Verdana;
- 	color: #8DB580;
+ 	color: #3D2923;
  	font-weight: 500 !important;
  }
 
+ h2 {
+ 	font-family: Verdana;
+ 	color: #3D2923;
+ 	font-weight: 300 !important;
+ 	text-align: center;
+ }
+
+ .navbar{
+ 	background-color: #FFEAE5 !important;
+ }
+
  .text-info{
- 	color: #6B717E !important;
+ 	color: #E4B373 !important;
  	font-weight: 900 !important;
  }
 
@@ -23,6 +34,22 @@
     font-size: 1.3rem;
     font-weight: 500;
  }
+
+ .card-title{
+ 	font-family: Verdana;
+ 	color: #3D2923; 	
+ }
+
+ .card-subtitle{
+ 	font-family: Verdana;
+ 	color: #875645; 	
+ }
+
+ .card-text{
+ 	font-family: "Roboto" !important;
+ 	color: #875645; 	
+ }
+
  .jumbotron {
     background-size: cover;
     background-position: center;
