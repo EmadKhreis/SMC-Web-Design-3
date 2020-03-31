@@ -426,6 +426,8 @@
       }
     });
 
+
+
       //Billing Form
     $("form#billing").submit(function(event){
       event.preventDefault();
@@ -504,7 +506,7 @@
     function showBillInfo() {
 
         if ($('#ship-next').clicked ) {
-          (document.getElementById('billinfo')).style.display='none';
+          (document.getElementById('billinfo')).style.display='block';
         } else{
           (document.getElementById('billinfo')).style.display='block';
         }   
