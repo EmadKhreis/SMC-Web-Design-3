@@ -18,13 +18,14 @@
     <h1>Check Out</h1>
     <main>
 
-    <button type="submit" class="btn btn-primary">Check Out</button>
+    <button type="submit" class="btn btn-primary" id="check-out" onclick="showShipInfo()">Check Out</button>
 
       <div class="Container">
 
         <div class="form-row">
 
           <!-- Shipping Address Form -->
+          <fieldset id="shipinfo">
           <div class="col col-md-12 col-lg-12"> <h5>Shipping Address</h5>
 
             <form action="" method="POST" enctype="multipart/form-data" class="needs-validation" id="shipping" novalidate>
@@ -134,11 +135,12 @@
                 </div>
 
               </div>
-              <button type="submit" class="btn btn-primary">Next</button>
+              <button type="submit" class="btn btn-primary" id="ship-next" onclick="showBillInfo()">Proceed to billing address</button>
             </form>
           </div>
-
+          </fieldset>  
           <!-- Billing Address Form -->
+          <fieldset id="billinfo">
           <div class="col col-md-12 col-lg-12"> <h5>Billing Address</h5>
 
             <form action="" method="POST" enctype="multipart/form-data" class="needs-validation" id="billing" novalidate>
@@ -253,20 +255,22 @@
               <div class="form-group col-sm-12 col-md-12 col-lg-12 col-lg-center col-md-center">
 
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
+                  <input type="checkbox" id="copy" value="copy">
+                  <label for="copy">
                     Same as Shipping Address
                   </label>
                 </div>
 
               </div>
-              <button type="submit" class="btn btn-primary">Next</button>
+              <button type="submit" class="btn btn-primary" id="bill-next" onclick="showCCInfo()">Proceed to payment</button>
             </form>
-
+            </div>
+            </fieldset>
           <!-- Credit Card Form -->
+          <fieldset id="ccinfo">
           <div class="col col-md-12 col-lg-12"> <h5>Payment</h5>
 
-            <form ction="" method="POST" enctype="multipart/form-data" class="needs-validation" id="payment" novalidate>
+            <form action="" method="POST" enctype="multipart/form-data" class="needs-validation" id="payment" novalidate>
 
               <div class="form-row">
 
@@ -385,10 +389,8 @@
               </div>
               <button type="submit" class="btn btn-primary">Next</button>
             </form>
-
-           
-        
-        </div>
+          </div>
+        </fieldset>
       </div>
     </main>
     <!-- Optional JavaScript -->
@@ -398,6 +400,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script>
+
 
       // Shipping Form
     $("form#shipping").submit(function(event){
@@ -421,7 +424,7 @@
       if($("input#inputZip").val() === "" ){
         $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
       }
-    })
+    });
 
       //Billing Form
     $("form#billing").submit(function(event){
@@ -445,7 +448,8 @@
       if($("input#binputZip").val() === "" ){
         $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
       }
-    })
+
+    });
 
       //Payment Form
     $("form#payment").submit(function(event){
@@ -469,7 +473,56 @@
       if($("input#pinputZip").val() === "" ){
         $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
       }
-    })
+    });
+
+      //Copy Billing Information
+    $('#copy').click(function(){
+
+      $('#binputFName4').val( $('#inputFName4').val() );
+      $('#binputLName4').val( $('#inputLName4').val() );
+      $('#binputAddress').val( $('#inputAddress').val() );
+      $('#binputAddress2').val( $('#inputAddress2').val() );
+      $('#binputCity').val( $('#inputCity').val() );
+      $('#binputState').val( $('#inputState').val() );
+      $('#binputZip').val( $('#inputZip').val() );
+    });
+
+    //Shipping Address Show Button    
+    document.getElementById('shipinfo').style.display='none';
+    function showShipInfo() {
+
+        if ($('#check-out').clicked ) {
+          (document.getElementById('shipinfo')).style.display='none';
+        } else{
+          (document.getElementById('shipinfo')).style.display='block';
+        }   
+
+    };
+
+    //Billing Address Show Button
+    document.getElementById('billinfo').style.display='none';
+    function showBillInfo() {
+
+        if ($('#ship-next').clicked ) {
+          (document.getElementById('billinfo')).style.display='none';
+        } else{
+          (document.getElementById('billinfo')).style.display='block';
+        }   
+
+    };
+
+    // CC Info Show Button  
+    document.getElementById('ccinfo').style.display='none';
+    function showCCInfo() {
+
+        if ($('#bill-next').clicked ) {
+          (document.getElementById('ccinfo')).style.display='none';
+        } else{
+          (document.getElementById('ccinfo')).style.display='block';
+        }   
+
+    };    
+
 
   </script>
   </body>
