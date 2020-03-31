@@ -27,25 +27,31 @@
           <!-- Shipping Address Form -->
           <div class="col col-md-12 col-lg-12"> <h5>Shipping Address</h5>
 
-            <form class="Shipping">
+            <form action="" method="POST" enctype="multipart/form-data" class="needs-validation" id="shipping" novalidate>
 
               <div class="form-row col-sm-12 col-md-12 col-lg-12 col-lg-center col-md-center">
 
                 <div class="form-group col-md-6">
                   <label for="inputFName4">First</label>
-                  <input type="text" class="form-control" id="inputFName4" placeholder="First Name">
+                  <input type="name" class="form-control" id="inputFName4" placeholder="First Name" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
                 </div>
 
                 <div class="form-group col-md-6">
                   <label for="inputLName4">Last</label>
-                  <input type="text" class="form-control" id="inputLName4" placeholder="Last Name">
+                  <input type="text" class="form-control" id="inputLName4" placeholder="Last Name" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
                 </div>
 
               </div>
 
               <div class="form-group col-md-12 col-lg-12 col-md-center col-lg-center">
                 <label for="inputAddress">Address</label>
-                <input type="Address" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <input type="Address" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                <div class="invalid-feedback">This field cannot be empty!</div>
+                <div class="valid-feedback">Well done!</div>
               </div>
 
               <div class="form-group col-md-12 col-lg-12 col-md-center col-lg-center">
@@ -56,12 +62,14 @@
               <div class="form-row col-sm-12 col-md-12 col-lg-12 col-lg-center col-md-center">
                 <div class="form-group col-md-4 col-lg-4">
                   <label for="inputCity">City</label>
-                  <input type="text" class="form-control" id="inputCity">
+                  <input type="text" class="form-control" id="inputCity" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
                 </div>
 
                 <div class="form-group col-md-4 col-lg-4">
                   <label for="inputState">State</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" class="form-control" placeholder= "Choose..." required>
                     <option selected>Choose...</option>
                     <option>AL</option>
                     <option>AK</option>
@@ -114,57 +122,69 @@
                     <option>WI</option>
                     <option>WY</option>
                   </select>
+                  <div class="invalid-feedback">You need to pick a state!</div>
+                  <div class="valid-feedback">Well done!</div>
                 </div>
 
                 <div class="form-group col-md-4 col-lg-4">
                   <label for="inputZip">Zip</label>
-                  <input type="Number" class="form-control" id="inputZip">
+                  <input type="Number" class="form-control" id="inputZip" placeholder="12345" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
                 </div>
 
               </div>
-
+              <button type="submit" class="btn btn-primary">Next</button>
             </form>
           </div>
 
           <!-- Billing Address Form -->
           <div class="col col-md-12 col-lg-12"> <h5>Billing Address</h5>
 
-            <form class="Billing">
+            <form action="" method="POST" enctype="multipart/form-data" class="needs-validation" id="billing" novalidate>
 
               <div class="form-row col-sm-12 col-md-12 col-lg-12 col-lg-center col-md-center">
 
                 <div class="form-group col-md-6">
-                  <label for="inputFName4">First</label>
-                  <input type="text" class="form-control" id="inputFName4" placeholder="First Name">
+                  <label for="binputFName4">First</label>
+                  <input type="text" class="form-control" id="binputFName4" placeholder="First Name" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
                 </div>
 
                 <div class="form-group col-md-6">
-                  <label for="inputLName4">Last</label>
-                  <input type="text" class="form-control" id="inputLName4" placeholder="Last Name">
+                  <label for="binputLName4">Last</label>
+                  <input type="text" class="form-control" id="binputLName4" placeholder="Last Name" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
                 </div>
 
               </div>
 
               <div class="form-group col-md-12 col-lg-12 col-md-center col-lg-center">
-                <label for="inputAddress">Address</label>
-                <input type="Address" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <label for="binputAddress">Address</label>
+                <input type="Address" class="form-control" id="binputAddress" placeholder="1234 Main St" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
               </div>
 
               <div class="form-group col-md-12 col-lg-12 col-md-center col-lg-center">
-                <label for="inputAddress2">Address 2</label>
-                <input type="Address" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                <label for="binputAddress2">Address 2</label>
+                <input type="Address" class="form-control" id="binputAddress2" placeholder="Apartment, studio, or floor">
               </div>
 
               <div class="form-row col-sm-12 col-md-12 col-lg-12 col-lg-center col-md-center">
 
                 <div class="form-group col-md-4 col-lg-4">
-                  <label for="inputCity">City</label>
-                  <input type="text" class="form-control" id="inputCity">
+                  <label for="binputCity">City</label>
+                  <input type="text" class="form-control" id="binputCity" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
                 </div>
 
                 <div class="form-group col-md-4 col-lg-4">
-                  <label for="inputState">State</label>
-                  <select id="inputState" class="form-control">
+                  <label for="binputState">State</label>
+                  <select id="binputState" class="form-control" required>
                     <option selected>Choose...</option>
                     <option>AL</option>
                     <option>AK</option>
@@ -217,11 +237,15 @@
                     <option>WI</option>
                     <option>WY</option>
                   </select>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
                 </div>
 
                 <div class="form-group col-md-4 col-lg-4">
-                  <label for="inputZip">Zip</label>
-                  <input type="Number" class="form-control" id="inputZip">
+                  <label for="binputZip">Zip</label>
+                  <input type="Number" class="form-control" id="binputZip" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
                 </div>
 
               </div>
@@ -236,13 +260,13 @@
                 </div>
 
               </div>
-
+              <button type="submit" class="btn btn-primary">Next</button>
             </form>
 
           <!-- Credit Card Form -->
           <div class="col col-md-12 col-lg-12"> <h5>Payment</h5>
 
-            <form class="Payment-method">
+            <form ction="" method="POST" enctype="multipart/form-data" class="needs-validation" id="payment" novalidate>
 
               <div class="form-row">
 
@@ -261,30 +285,38 @@
 
 
                 <div class="form-group col-md-6 col-lg-6">
-                  <label for="inputLName4">Name on Card</label>
-                  <input type="text" class="form-control" id="inputLName4" placeholder="John More">
+                  <label for="name-card">Name on Card</label>
+                  <input type="text" class="form-control" id="name-card" placeholder="John More" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
                 </div>
 
               
 
               <div class="form-group col-sm-12 col-md-6 col-lg-6">
-                <label for="CC-number">Credit Card Number</label>
-                <input type="Number" class="form-control" id="CC-number" placeholder="1234-1234-1234-1234">
+                <label for="cc-number">Credit Card Number</label>
+                <input type="Number" class="form-control" id="cc-number" placeholder="1234-1234-1234-1234" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
               </div>
 
               <div class="form-group col-md-3">
-                <label for="CC-Experation">Card Experation Date</label>
-                <input type="Month" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                <label for="cc-Experation">Card Experation Date</label>
+                <input type="Month" class="form-control" id="cc-Experation" placeholder="Apartment, studio, or floor" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
               </div>
 
                 <div class="form-group col-md-3">
-                  <label for="inputCity">CCV</label>
-                  <input type="Number" class="form-control" id="inputCity">
+                  <label for="cvv">CVV</label>
+                  <input type="Number" class="form-control" id="cvv" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
                 </div>
 
                 <div class="form-group col-md-3">
-                  <label for="inputState">State</label>
-                  <select id="inputState" class="form-control">
+                  <label for="pinputState">State</label>
+                  <select id="pinputState" class="form-control" required>
                     <option selected>Choose...</option>
                     <option>AL</option>
                     <option>AK</option>
@@ -337,17 +369,21 @@
                     <option>WI</option>
                     <option>WY</option>
                   </select>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
                 </div>
 
                 <div class="form-group col-md-3">
-                  <label for="inputZip">Zip</label>
-                  <input type="Number" class="form-control" id="inputZip">
+                  <label for="pinputZip">Zip</label>
+                  <input type="Number" class="form-control" id="pinputZip" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
                 </div>
 
               </div>
 
               </div>
-
+              <button type="submit" class="btn btn-primary">Next</button>
             </form>
 
            
@@ -360,5 +396,81 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+
+      // Shipping Form
+    $("form#shipping").submit(function(event){
+      event.preventDefault();
+
+      if($("input#inputFName4").val() === "" ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+      if($("input#inputLName4").val() === "" ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+      if($("input#inputAddress").val() === "" ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+      if($("input#inputCity").val() === "" ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+      if($("input#inputState").val() === "Choose..." ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+      if($("input#inputZip").val() === "" ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+    })
+
+      //Billing Form
+    $("form#billing").submit(function(event){
+      event.preventDefault();
+
+      if($("input#binputFName4").val() === "" ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+      if($("input#binputLName4").val() === "" ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+      if($("input#binputAddress").val() === "" ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+      if($("input#binputCity").val() === "" ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+      if($("input#binputState").val() === "Choose..." ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+      if($("input#binputZip").val() === "" ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+    })
+
+      //Payment Form
+    $("form#payment").submit(function(event){
+      event.preventDefault();
+
+      if($("input#name-card").val() === "" ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+      if($("input#cc-number").val() === "" ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+      if($("input#cc-Experation").val() === "" ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+      if($("input#cvv").val() === "" ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+      if($("input#pinputState").val() === "Choose..." ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+      if($("input#pinputZip").val() === "" ){
+        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      }
+    })
+
+  </script>
   </body>
 </html>
