@@ -11,4 +11,6 @@ $('#pauseButton').click(function () {
     $('#productsCarousel').carousel('pause');
 });
 
+$("#modalSubscriptionForm").modal('show');
+
 });
