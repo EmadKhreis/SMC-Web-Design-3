@@ -1,0 +1,22 @@
+#carouselButtons {
+    margin-left: 44%;
+    position: absolute;
+}
+
+.jumbotron {
+  background-image: url(img/IMG_4614.jpg);
+  background-size: cover;
+  text-align: middle;
+
+}
+
+.navbar {
+	background-color: white;
+}
+h1.jumbotron {
+	text-align: middle;
+}
+
+body {
+	background-color: White;
+}
