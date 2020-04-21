@@ -40,6 +40,11 @@
 }
 /* Modal */
 
+/* Alert */
+.alert {
+	background-color: #EAEAEA !important;
+}
+/* Alert */
 
 body {
 	background-image: url(img/IMG_4614.jpg);
