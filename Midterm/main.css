@@ -1,22 +1,71 @@
-#carouselButtons {
-    margin-left: 44%;
-    position: absolute;
-}
 
+/* Carousel */
+.carousel-indicators {
+	filter: invert(1);
+}
+/* Carousel */
+
+/* Jumbotron */
 .jumbotron {
-  background-image: url(img/IMG_4614.jpg);
-  background-size: cover;
-  text-align: middle;
-
+  margin-top: 20px;
+  background-color: transparent !important;
+  text-align: center;
 }
+/* Jumbotron */
 
+/* Nav Bar */
 .navbar {
-	background-color: white;
+	background-color: 0;
 }
-h1.jumbotron {
-	text-align: middle;
+/* Nav Bar */
+
+/* Modal */
+.modal-content{
+	background-color: #CCCC99 !important;
 }
+
+.modal-header {
+	color: #990033 !important;
+	font-family: "verdana" !important;
+}
+
+.modal-body {
+	color: #666633 !important;
+	font-family: "Trebuchet MS" !important;
+}
+
+.close {
+	color: #990033 !important;
+	font-family: "verdana" !important;	
+}
+/* Modal */
+
 
 body {
-	background-color: White;
+	background-image: url(img/IMG_4614.jpg);
+	background-size: cover;
+}
+
+h5 {
+	font-family: "verdana" !important;
+	font-weight: 700;
+	color: #666633 !important;
+}
+
+p {
+	font-family: "Trebuchet MS" !important;
+	color: #990033;
+}
+
+h1 {
+	-webkit-text-stroke: 2px black;
+	font-family: "verdana" !important;
+	color: white;
+}
+
+h6 {
+	font-family: "Trebuchet MS" !important;
+	color: #990033;
+	margin-left: 118px;
+	margin-top: -10px;
 }
