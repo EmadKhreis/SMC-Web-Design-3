@@ -12,31 +12,21 @@
 }
 /* Jumbotron */
 
-/* Card Start */
-.list-group-item {
-	background-color: #CCCC99 !important;
-	font-family: "verdana" !important;
-	color: #990033 !important;
-	margin-left: 1vw;
-}
-.card-link {
-	color: #990033 !important;
-}
-/* Card End */
-
 h1 {
 	font-family: "verdana" !important;
 	color: #990033 !important;
 }
 
-h5 {
+h2{
 	font-family: "verdana" !important;
-	font-weight: 700;
 	color: #990033 !important;
-	text-align: center;
 }
 
-p {
+p{
 	font-family: "Trebuchet MS" !important;
 	color: #666633;
+}
+
+body {
+	background-color: white !important;
 }
