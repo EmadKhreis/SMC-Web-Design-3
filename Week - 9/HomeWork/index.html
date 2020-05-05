@@ -6,23 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Hello, world!</title>
+    <title>Transformations and Transitions</title>
     <style>
-
-      .navbar {
-       background: rgb(191,48,92);
-      background: linear-gradient(90deg, rgba(191,48,92,1) 0%, rgba(147,63,255,1) 38%, rgba(0,39,255,1) 62%, rgba(38,173,238,1) 99%);
-      }
-
-      .nav-link {
-        transition: font-size .5s;
-      }
-      .nav-link:hover {
-        font-size: 18px;
-        color: white !important;
-      }
-
-
+    .navbar {
+    background: rgb(191,48,92);
+    background: linear-gradient(90deg, rgba(191,48,92,1) 0%, rgba(147,63,255,1) 38%, rgba(0,39,255,1) 62%, rgba(38,173,238,1) 99%);
+    }
+    .nav-link {
+    transition: font-size .5s;
+    }
+    .nav-link:hover {
+    font-size: 18px;
+    color: white !important;
+    }
+    img {
+    opacity: 50%;
+    position: flex;
+    }
+    .img-1:active {
+    transform: scale(2) translate(200px,200px);
+    opacity: 100% !important;
+    }
+    .img-2:active {
+    transform: scale(2) translate(0px,200px);
+    opacity: 100% !important;
+    }
+    .img-3:active {
+    transform: scale(2) translate(-200px,200px);
+    opacity: 100% !important;
+    }
+    .img-4:active {
+    transform: scale(2) translate(200px,100px);
+    opacity: 100% !important;
+    }
+    .img-5:active {
+    transform: scale(2) translate(0px,100px);
+    opacity: 100% !important;
+    }
+    .img-6:active {
+    transform: scale(2) translate(-200px,100px);
+    opacity: 100% !important;
+    }
     </style>
   </head>
   <body>
@@ -72,6 +96,31 @@
       </div>
     </nav>
     <!-- Nav Bar Ends -->
+    <!-- Photo Grid -->
+    <div class="container">
+      <div class="row">
+        <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-4">
+          
+          <img src="img/tent.png" class="img-1 d-block w-100" alt="...">
+        </div>
+        <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-4">
+          <img src="img/Tools.png" class="img-2 d-block w-100" alt="...">
+        </div>
+        <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-4">
+          <img src="img/Boots.png" class="img-3 d-block w-100" alt="...">
+        </div>
+        <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-4">
+          <img src="img/flashlight.png" class="img-4 d-block w-100" alt="...">
+        </div>
+        <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-4">
+          <img src="img/WALKING STICK.png" class="img-5 d-block w-100" alt="...">
+        </div>
+        <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-4">
+          <img src="img/bigfoot logo.png" class="img-6 d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+    <!-- Photo Grid End -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
