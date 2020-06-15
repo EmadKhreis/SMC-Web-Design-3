@@ -7,70 +7,59 @@
 
 /* Jumbotron */
 .jumbotron {
-  margin-top: 20px;
-  background-color: transparent !important;
-  text-align: center;
+  margin-bottom: -3%;
+  background-color: transparent;
+  text-align: center !important;
 }
 /* Jumbotron */
 
 /* Nav Bar */
 .navbar {
-	background-color: #EAEAEA !important;
 }
 /* Nav Bar */
 
 /* Modal */
 .modal-content{
-	background-color: #CCCC99 !important;
+	background-color:#222831 !important;
 }
 
 .modal-header {
-	color: #990033 !important;
+	color: #f2a365 !important;
 	font-family: "verdana" !important;
 }
 
 .modal-body {
-	color: #666633 !important;
+	color: #ececec !important;
 	font-family: "Trebuchet MS" !important;
 }
 
 .close {
-	color: #990033 !important;
+	color: #ececec !important;
 	font-family: "verdana" !important;	
 }
 /* Modal */
 
-/* Alert */
-.alert {
-	background-color: #EAEAEA !important;
-}
-/* Alert */
-
 body {
-	background-image: url(img/IMG_4614.jpg);
-	background-size: cover;
+	background-color: #222831;
 }
 
 h5 {
 	font-family: "verdana" !important;
 	font-weight: 700;
-	color: #666633 !important;
+	color: #f2a365 !important;
 }
 
 p {
 	font-family: "Trebuchet MS" !important;
-	color: #990033;
+	color: #ececec; 
 }
 
 h1 {
-	-webkit-text-stroke: 2px black;
 	font-family: "verdana" !important;
-	color: white;
+	color: #f2a365;
 }
 
 h6 {
 	font-family: "Trebuchet MS" !important;
-	color: #990033;
-	margin-left: 118px;
-	margin-top: -10px;
+	color: #ececec;
 }

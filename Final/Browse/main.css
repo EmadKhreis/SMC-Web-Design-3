@@ -1,0 +1,92 @@
+/* Nav Bar */
+.navbar {
+}
+/* Nav Bar */
+
+/* Jumbotron */
+.jumbotron {
+  margin-bottom: -3%;
+  background-color: transparent !important;
+  text-align: center;
+}
+/* Jumbotron */
+
+/* Card Start */
+.card {
+	background-color: transparent;
+	border-color: transparent;
+}
+.card-img-top{
+	background-color: transparent !important;
+}
+.list-group-item {
+	background-color: #CCCC99 !important;
+	font-family: "verdana" !important;
+	color: #990033 !important;
+	margin-left: 1vw;
+}
+#myButton {
+	text-align: center;
+	background-color: #222831;
+}
+.card-link {
+  background-color: transparent; /* Green */
+  border: solid;
+  border-color: #f2a365;
+  border-radius: 8px; 
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inherit;
+  cursor: pointer;
+}
+#TextBox {
+	background-color: transparent;
+	border-color: transparent;
+	color: grey;
+}
+
+#Cart {
+  align-self: center;
+  background-color: transparent; /* Green */
+  border: solid;
+  border-color: #f2a365;
+  border-radius: 8px; 
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inherit;
+  cursor: pointer;
+}
+.card-text {
+	text-align: left;
+}
+#canvas {
+	text-align: center;
+}
+/* Card End */
+
+body {
+	background-color: #222831;
+}
+
+h5 {
+	font-family: "verdana" !important;
+	font-weight: 700;
+	color: #f2a365 !important;
+}
+
+p {
+	font-family: "Trebuchet MS" !important;
+	color: #ececec; 
+}
+
+h1 {
+	font-family: "verdana" !important;
+	color: #f2a365;
+}
+
+h6 {
+	font-family: "Trebuchet MS" !important;
+	color: #ececec;
+}
