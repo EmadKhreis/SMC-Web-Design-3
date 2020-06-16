@@ -1,55 +1,452 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <!-- Main CSS -->
-        <link href="main.css" rel="stylesheet">
-        <!-- Icon Library -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
-        <title>Team</title>
-    </head>
-    <body>
-        <!--Jumbotron -->
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Check Out!</h1>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link href="main.css" rel="stylesheet">
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    
+    <!--Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Checkout</h1>
+        <h6 class="lead">Please make sure that the items in cart are correct before you Place you Order</h6>
+      </div>
+    </div>
+    <!-- Nav Bar Start -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html"><img src="img/navlogo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Browse
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="../browse/canvas-index.html">Canvas Prints<span class="sr-only">(current)</span></a>
+              <a class="dropdown-item" href="../browse/frame-index.html">Frame Prints</a>
+              <a class="dropdown-item" href="../browse/paper.html">Paper Prints</a>
             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact/contact.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="checkout/checkout.html">Printing Process</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../checkout/checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Nav Bar End -->
+    <main>
+      <!-- Cart Start -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table table-dark text-center" id="cart">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"><strong>Name</strong></th>
+                  <th scope="col"><strong>Quantity</strong></th>
+                  <th scope="col"><strong>Price</strong></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" width="80"><img src="../img/canvas/night-city-5canvas.png" height="60"></th>
+                  <td style="vertical-align: middle;">Night City 5pc Canvas 48" x 72"</td>
+                  <td style="vertical-align: middle;">1</td>
+                  <td style="vertical-align: middle;">$80</td>
+                </tr>
+                <tr>
+                  <th scope="row" width="80"><img src="../img/frame/star-trail-black-pf.png" height="60"></th>
+                  <td style="vertical-align: middle;">Trail of Stars Black Frame 10" x 8"</td>
+                  <td style="vertical-align: middle;">1</td>
+                  <td style="vertical-align: middle;">$5</td>
+                </tr>
+                <tr>
+                  <th class="text-left" scope="row">Taxes</th>
+                  <td></td>
+                  <td></td>
+                  <td style="vertical-align: middle;">$6.16</td>
+                </tr>
+                <tr>
+                  <th class="text-left" scope="row">Shipping</th>
+                  <td></td>
+                  <td></td>
+                  <td style="vertical-align: middle;">$0</td>
+                </tr>
+                <tr>
+                  <th class="text-left" scope="row" ><strong>Total</strong></th>
+                  <td></td>
+                  <td></td>
+                  <td><strong>$91.16</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-12">
+            <div class="pull-right">
+              <button type="submit" class="btn btn-dark" id="check-out" onclick="showShipInfo()">Shipping Info</button>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="pull-left">
+              <button type="submit" class="btn btn-dark" id="show-cart" onclick="showCart()" style="display: none;">Show Cart</button>
+            </div>
+          </div>
         </div>
-        <!-- Nav Bar Start -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="../img/navlogo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Products/products.html">Our Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../contact/contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="checkout.html">Check Out <span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
+        <!-- Cart End -->
+        <!-- Shipping Address Form -->
+        <div class="form-row">
+          <div class="col col-md-12 col-lg-12" id="shipinfo"> <h5>Shipping Address</h5>
+            <form action="" method="POST" enctype="multipart/form-data" class="needs-validation" id="shipping" novalidate>
+              <div class="form-row col-sm-12 col-md-12 col-lg-12 col-lg-center col-md-center">
+                <div class="form-group col-md-6">
+                  <label for="inputFName4">First</label>
+                  <input type="name" class="form-control" id="inputFName4" placeholder="First Name" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputLName4">Last</label>
+                  <input type="text" class="form-control" id="inputLName4" placeholder="Last Name" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
+                </div>
+              </div>
+              <div class="form-group col-md-12 col-lg-12 col-md-center col-lg-center">
+                <label for="inputAddress">Address</label>
+                <input type="Address" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                <div class="invalid-feedback">This field cannot be empty!</div>
+                <div class="valid-feedback">Well done!</div>
+              </div>
+              <div class="form-group col-md-12 col-lg-12 col-md-center col-lg-center">
+                <label for="inputAddress2">Address 2</label>
+                <input type="Address" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="form-row col-sm-12 col-md-12 col-lg-12 col-lg-center col-md-center">
+                <div class="form-group col-md-4 col-lg-4">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control" id="inputCity" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
+                </div>
+                <div class="form-group col-md-4 col-lg-4">
+                  <label for="inputState">State</label>
+                  <select id="inputState" class="form-control" placeholder= "Choose..." required>
+                    <option selected>Choose...</option>
+                    <option>AL</option>
+                    <option>AK</option>
+                    <option>AZ</option>
+                    <option>AR</option>
+                    <option>CA</option>
+                    <option>CO</option>
+                    <option>CT</option>
+                    <option>DE</option>
+                    <option>FL</option>
+                    <option>GA</option>
+                    <option>HI</option>
+                    <option>ID</option>
+                    <option>IL</option>
+                    <option>IN</option>
+                    <option>IA</option>
+                    <option>KS</option>
+                    <option>KY</option>
+                    <option>LA</option>
+                    <option>ME</option>
+                    <option>MD</option>
+                    <option>MA</option>
+                    <option>MI</option>
+                    <option>MN</option>
+                    <option>MS</option>
+                    <option>MO</option>
+                    <option>MT</option>
+                    <option>NE</option>
+                    <option>NV</option>
+                    <option>NH</option>
+                    <option>NJ</option>
+                    <option>NM</option>
+                    <option>NY</option>
+                    <option>NC</option>
+                    <option>ND</option>
+                    <option>OH</option>
+                    <option>OK</option>
+                    <option>OR</option>
+                    <option>PA</option>
+                    <option>RI</option>
+                    <option>SC</option>
+                    <option>SD</option>
+                    <option>TN</option>
+                    <option>TX</option>
+                    <option>UT</option>
+                    <option>VT</option>
+                    <option>VA</option>
+                    <option>WA</option>
+                    <option>WV</option>
+                    <option>WI</option>
+                    <option>WY</option>
+                  </select>
+                  <div class="invalid-feedback">You need to pick a state!</div>
+                  <div class="valid-feedback">Well done!</div>
+                </div>
+                <div class="form-group col-md-4 col-lg-4">
+                  <label for="inputZip">Zip</label>
+                  <input type="Number" class="form-control" id="inputZip" placeholder="12345" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="pull-right">
+                  <button type="submit" class="btn btn-dark" id="ship-next" onclick="showCCInfo()">Proceed to billing address</button>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="pull-right">
+                  <button type="submit" class="btn btn-dark" id="show-ship" onclick="showCCInfo()" style="display: none;">Proceed to billing address</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- Billing Address Form -->
+          <!-- Credit Card Form -->
+          <div class="col col-md-12 col-lg-12" id="ccinfo"> <h5>Payment</h5>
+            <form action="" method="POST" enctype="multipart/form-data" class="needs-validation" id="payment" novalidate>
+              <div class="form-row">
+                <div class="col col-sm-12 col-md-12 col-lg-12 col-lg-center col-md-center">
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                </div>
+                <div class="form-group col-md-6 col-lg-6">
+                  <label for="name-card">Name on Card</label>
+                  <input type="text" class="form-control" id="name-card" placeholder="John More" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
+                </div>
+                
+                <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                  <label for="cc-number">Credit Card Number</label>
+                  <input type="Number" class="form-control" id="cc-number" placeholder="1234-1234-1234-1234" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="cc-Experation">Card Experation Date</label>
+                  <input type="Month" class="form-control" id="cc-Experation" placeholder="Apartment, studio, or floor" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="cvv">CVV</label>
+                  <input type="Number" class="form-control" id="cvv" placeholder="cvv" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="pinputState">State</label>
+                  <select id="pinputState" class="form-control" required>
+                    <option selected>Choose...</option>
+                    <option>AL</option>
+                    <option>AK</option>
+                    <option>AZ</option>
+                    <option>AR</option>
+                    <option>CA</option>
+                    <option>CO</option>
+                    <option>CT</option>
+                    <option>DE</option>
+                    <option>FL</option>
+                    <option>GA</option>
+                    <option>HI</option>
+                    <option>ID</option>
+                    <option>IL</option>
+                    <option>IN</option>
+                    <option>IA</option>
+                    <option>KS</option>
+                    <option>KY</option>
+                    <option>LA</option>
+                    <option>ME</option>
+                    <option>MD</option>
+                    <option>MA</option>
+                    <option>MI</option>
+                    <option>MN</option>
+                    <option>MS</option>
+                    <option>MO</option>
+                    <option>MT</option>
+                    <option>NE</option>
+                    <option>NV</option>
+                    <option>NH</option>
+                    <option>NJ</option>
+                    <option>NM</option>
+                    <option>NY</option>
+                    <option>NC</option>
+                    <option>ND</option>
+                    <option>OH</option>
+                    <option>OK</option>
+                    <option>OR</option>
+                    <option>PA</option>
+                    <option>RI</option>
+                    <option>SC</option>
+                    <option>SD</option>
+                    <option>TN</option>
+                    <option>TX</option>
+                    <option>UT</option>
+                    <option>VT</option>
+                    <option>VA</option>
+                    <option>WA</option>
+                    <option>WV</option>
+                    <option>WI</option>
+                    <option>WY</option>
+                  </select>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="pinputZip">Zip</label>
+                  <input type="Number" class="form-control" id="pinputZip" placeholder="zip code" required>
+                  <div class="invalid-feedback">This field cannot be empty!</div>
+                  <div class="valid-feedback">Well done!</div>
+                </div>
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Place your Order</button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Purchase Complete!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">Thank you for your purchase.<br>We emailed you a copy of the receipt with the tracking number. If you would like to print your receipt please click the button below!</div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">Print Receipt</button>
+                        <button type="button" class="btn btn-secondary">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </nav>
-        <!-- Nav Bar End -->
-
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script type="script.js"></script>
-    </body>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+  // Shipping Form
+  $("form#shipping").submit(function(event){
+  event.preventDefault();
+  if($("input#inputFName4").val() === "" ){
+  $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+  }
+  if($("input#inputLName4").val() === "" ){
+  $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+  }
+  if($("input#inputAddress").val() === "" ){
+  $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+  }
+  if($("input#inputCity").val() === "" ){
+  $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+  }
+  if($("input#inputState").val() === "Choose..." ){
+  $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+  }
+  if($("input#inputZip").val() === "" ){
+  $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+  }
+  });
+  //Payment Form
+  $("form#payment").submit(function(event){
+  event.preventDefault();
+  if($("input#name-card").val() === "" ){
+  $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+  }
+  if($("input#cc-number").val() === "" ){
+  $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+  }
+  if($("input#cc-Experation").val() === "" ){
+  $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+  }
+  if($("input#cvv").val() === "" ){
+  $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+  }
+  if($("input#pinputState").val() === "Choose..." ){
+  $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+  }
+  if($("input#pinputZip").val() === "" ){
+  $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+  }
+  });
+  //Cart Show Button
+  document.getElementById('cart').style.display='';
+  function showCart() {
+  if ($('#show-cart').clicked ) {
+  (document.getElementById('cart')).style.display='none';
+  (document.getElementById('check-out')).style.display='none';
+  (document.getElementById('show-cart')).style.display='';
+  (document.getElementById('shipinfo')).style.display='';
+  } else{
+  (document.getElementById('cart')).style.display='';
+  (document.getElementById('check-out')).style.display='';
+  (document.getElementById('show-cart')).style.display='none';
+  (document.getElementById('shipinfo')).style.display='none';
+  }
+  };
+  //Shipping Address Show Button
+  document.getElementById('shipinfo').style.display='none';
+  function showShipInfo() {
+  if ($('#check-out').clicked ) {
+  (document.getElementById('shipinfo')).style.display='none';
+  (document.getElementById('cart')).style.display='';
+  (document.getElementById('check-out')).style.display='';
+  (document.getElementById('show-cart')).style.display='none';
+  (document.getElementById('show-ship')).style.display='none';
+  } else{
+  (document.getElementById('shipinfo')).style.display='';
+  (document.getElementById('cart')).style.display='none';
+  (document.getElementById('check-out')).style.display='none';
+  (document.getElementById('show-cart')).style.display='';
+  }
+  };
+  // CC Info Show Button
+  document.getElementById('ccinfo').style.display='none';
+  function showCCInfo() {
+  if ($('#ship-next').clicked ) {
+  (document.getElementById('ccinfo')).style.display='none';
+  (document.getElementById('shipinfo')).style.display='';
+  } else{
+  (document.getElementById('ccinfo')).style.display='';
+  (document.getElementById('shipinfo')).style.display='none';
+  }
+  };
+  </script>
+</body>
 </html>
