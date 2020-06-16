@@ -1,32 +1,53 @@
 /* Nav Bar */
-.navbar {
-	background-color: #EAEAEA !important;
+.navbar-brand {
+transition: transform 2s;
+}
+.navbar-brand:focus {
+transform: rotate(180deg);
+}
+.nav-link {
+transition: font-size .5s;
+}
+.nav-link:hover {
+font-size: 18px;
+color: white !important;
+}
+.navbar-brand {
+transition: transform 2s;
+}
+.navbar-brand:focus {
+transform: rotate(180deg);
 }
 /* Nav Bar */
-
 /* Jumbotron */
 .jumbotron {
-  margin-top: 20px;
-  background-color: transparent !important;
-  text-align: center;
+margin-bottom: -3%;
+background-color: transparent !important;
+text-align: center;
 }
 /* Jumbotron */
 
-h1 {
-	font-family: "verdana" !important;
-	color: #990033 !important;
-}
-
-h2{
-	font-family: "verdana" !important;
-	color: #990033 !important;
-}
-
-p{
-	font-family: "Trebuchet MS" !important;
-	color: #666633;
-}
-
+/* Card End */
 body {
-	background-color: white !important;
+background-color: #222831;
+}
+h5 {
+font-family: "verdana" !important;
+color: #f2a365 !important;
+}
+p {
+font-family: "Trebuchet MS" !important;
+color: #222831;
+}
+h1 {
+font-family: "verdana" !important;
+color: #f2a365;
+}
+h6 {
+font-family: "Trebuchet MS" !important;
+color: #ececec;
+}
+label {	
+font-family: "Trebuchet MS" !important;
+color: #ececec;
 }

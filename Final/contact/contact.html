@@ -1,56 +1,140 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <!-- Main CSS -->
-        <link href="main.css" rel="stylesheet">
-        <!-- Icon Library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>About</title>
-    </head>
-    <body>
-        <!-- Jumbotron -->
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Contact Us</h1>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link href="main.css" rel="stylesheet">
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+    <title>FAQ</title>
+  </head>
+  <body>
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">FAQ</h1>
+      </div>
+    </div>
+    <!-- Nav Bar Start -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../home/index.html"><img src="img/navlogo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../home/index.html">Home<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Browse
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="../canvas-index/canvas-index.html">Canvas Prints</a>
+              <a class="dropdown-item" href="../frame-index/frame-index.html">Frame Prints</a>
+              <a class="dropdown-item" href="../paper/paper.html">Paper Prints</a>
             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="checkout/checkout.html">Printing Process</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../checkout/checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> 0</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Nav Bar End -->
+    <div class="container" style="margin-top: 20px">
+      <div class="row">
+        <div class="col col-12">
+          <div class="accordion" id="accordionExample">
+            <div class="card bg-light">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h5>Why PhotoLab?</h5>
+                </button>
+                </h2>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Have you ever wondered how some canvas companies can offer enticingly steep discounts that seem too good to be true? The answer is two-fold: To start, they
+                    raise the list price so that they can provide a higher percentage off and still turn a profit. The result? There’s no real savings to be had. But more importantly,
+                    they tend to use discount materials that will not stand the test of time. You want your personalized canvas to last a lifetime, and you can’t get that kind of
+                    surety when a canvas company uses wafer-thin canvas material, substandard frames and inks that are very likely to fade.
+                  At PhotoLab our standards are several cuts above.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-light">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h5>Why my order did not arrive yet?</h5>
+                </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Due to the pandemic we are currently facing, orders outside the state of California my take a couple of days longer than the estimate shipping date. We apologize for the inconvenience! Please email our support team at <u>support@photolab.com</u> to see how we can help you further.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-light">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h5>Image size I am trying to upload is too big!</h5>
+                </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Currently, our website can handle up to 25mb file. If your pictures' size is more, please email us at <u>support@photolab.com</u> so you can share it with us via your prefered multi-media sharing website. Thank you for understanding.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-light">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                <h5>If I am located in Los Angeles can I pick up my orders at your store's location?</h5>
+                </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col col-lg-6">
+                        <p>Absolutly! Our store's location is: <u>22341 Sherman rd, Canoga Park, CA 91303</u> </p>
+                      </div>
+                      <div class="col col-lg-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3299.850211248734!2d-118.6062302848247!3d34.20130338056573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c29c3fe8e42dcf%3A0xb25f79b51532c66a!2sAdvanced%20Photo%20Lab!5e0!3m2!1sen!2sus!4v1592291255327!5m2!1sen!2sus" width="300" height="225" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Nav Bar Start -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="../img/navlogo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Products/products.html">Our Products</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="contact.html">Contact Us <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../checkout/checkout.html">Check Out</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Nav Bar End -->
-        <!-- Featurettes Start -->
-
-        <!-- Featurettes End -->
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script type="script.js"></script>
-    </body>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
