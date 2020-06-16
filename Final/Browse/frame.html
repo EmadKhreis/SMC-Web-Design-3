@@ -40,7 +40,7 @@ Placeholder<!doctype html>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="canvas-index.html">Canvas Prints<span class="sr-only">(current)</span></a>
             <a class="dropdown-item" href="frame-index.html">Frame Prints</a>
-            <a class="dropdown-item" href="#">Paper Prints</a>
+            <a class="dropdown-item" href="paper.html">Paper Prints</a>
           </div>
         </li>
         <li class="nav-item">
@@ -61,7 +61,7 @@ Placeholder<!doctype html>
     <div class="row">
       <div class="col-12 col-md-4 col-lg-4">
         <div class="card">
-          <img class="card-img-top" src="../img/canvas/upload-5canvas.png" alt="1 piece canvas">
+          <img class="card-img-top" src="../img/frame/upload-black-pf.png" alt="upload">
           <div class="card-body">
             <h5 class="card-title">Upload your Picture</h5>
           </div>
@@ -72,7 +72,7 @@ Placeholder<!doctype html>
       </div>
       <div class="col-12 col-md-4 col-lg-4">
         <div class="card">
-          <img class="card-img-top" src="../img/canvas/crimson-lake-5canvas.png" alt="3 piece canvas">
+          <img class="card-img-top" src="../img/frame/crimson-lake-black-pf.png" alt="crimson lake">
           <div class="card-body">
             <h5 class="card-title">Crimson Lake</h5>
           </div>
@@ -83,7 +83,7 @@ Placeholder<!doctype html>
       </div>
       <div class="col-12 col-md-4 col-lg-4">
         <div class="card">
-          <img class="card-img-top" src="../img/canvas/caverns-of-time-5canvas.png" alt="5 piece canvas">
+          <img class="card-img-top" src="../img/frame/caverns-of-time-black-pf.png" alt="caverns">
           <div class="card-body">
             <h5 class="card-title">Cavern</h5>
           </div>
@@ -94,7 +94,7 @@ Placeholder<!doctype html>
       </div>
       <div class="col-12 col-md-4 col-lg-4">
         <div class="card">
-          <img class="card-img-top" src="../img/canvas/lake-cabin-5canvas.png" alt="1 piece canvas">
+          <img class="card-img-top" src="../img/frame/lake-cabin-black-pf.png" alt="lake cabin">
           <div class="card-body">
             <h5 class="card-title">Lake</h5>
           </div>
@@ -105,7 +105,7 @@ Placeholder<!doctype html>
       </div>
       <div class="col-12 col-md-4 col-lg-4">
         <div class="card">
-          <img class="card-img-top" src="../img/canvas/night-city-5canvas.png" alt="1 piece canvas">
+          <img class="card-img-top" src="../img/frame/night-city-black-pf.png" alt="night city">
           <div class="card-body">
             <h5 class="card-title">Night City</h5>
           </div>
@@ -116,7 +116,7 @@ Placeholder<!doctype html>
       </div>
       <div class="col-12 col-md-4 col-lg-4">
         <div class="card">
-          <img class="card-img-top" src="../img/canvas/star-trail-5canvas.png" alt="1 piece canvas">
+          <img class="card-img-top" src="../img/frame/star-trail-black-pf.png" alt="star trails">
           <div class="card-body">
             <h5 class="card-title">Trail of Stars</h5>
           </div>
@@ -127,12 +127,34 @@ Placeholder<!doctype html>
       </div>
       <div class="col-12 col-md-4 col-lg-4">
         <div class="card">
-          <img class="card-img-top" src="../img/canvas/sunset-black-5canvas.png" alt="1 piece canvas">
+          <img class="card-img-top" src="../img/frame/sunset-black-pf.png" alt="sunset">
           <div class="card-body">
             <h5 class="card-title">Sunset</h5>
           </div>
           <div class="card-body">
             <a class="card-link" id="cart7"><h5>Add to Cart</h5></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4">
+        <div class="card">
+          <img class="card-img-top" src="../img/frame/ancient-surfer-black-pf.png" alt="ancient surfer">
+          <div class="card-body">
+            <h5 class="card-title">Ancient Surfer</h5>
+          </div>
+          <div class="card-body">
+            <a class="card-link" id="cart8"><h5>Add to Cart</h5></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4">
+        <div class="card">
+          <img class="card-img-top" src="../img/frame/jungle-royality-black-pf.png" alt="Jungle Royality">
+          <div class="card-body">
+            <h5 class="card-title">Royality</h5>
+          </div>
+          <div class="card-body">
+            <a class="card-link" id="cart9"><h5>Add to Cart</h5></a>
           </div>
         </div>
       </div>
@@ -174,6 +196,16 @@ Placeholder<!doctype html>
     $('#TextBox').val(counter);
     });
     $('#cart7').click( function() {
+    var counter = $('#TextBox').val();
+    counter++ ;
+    $('#TextBox').val(counter);
+    });
+    $('#cart8').click( function() {
+    var counter = $('#TextBox').val();
+    counter++ ;
+    $('#TextBox').val(counter);
+    });
+    $('#cart9').click( function() {
     var counter = $('#TextBox').val();
     counter++ ;
     $('#TextBox').val(counter);

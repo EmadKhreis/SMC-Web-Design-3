@@ -1,9 +1,14 @@
 $(document).ready(function(){
 	//we write everything here
-    $('#productsCarousel').carousel({
-        interval: 3000
-    });
-
+document.addEventListener('DOMContentLoaded', function() {
+    M.AutoInit();
+    var options = {
+        fullWidth: true, 
+        indicators: true
+    };
+    var elem = document.querySelector('.carousel');
+    var instance = M.Carousel.init(elem, options);
+});
 $('#playButton').click(function () {
     $('#productsCarousel').carousel('cycle');
 });

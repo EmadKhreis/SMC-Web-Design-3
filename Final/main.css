@@ -14,7 +14,24 @@
 /* Jumbotron */
 
 /* Nav Bar */
-.navbar {
+.navbar-brand {
+transition: transform 2s;
+}
+.navbar-brand:focus {
+transform: rotate(180deg);
+}
+.nav-link {
+transition: font-size .5s;
+}
+.nav-link:hover {
+font-size: 18px;
+color: white !important;
+}
+.navbar-brand {
+transition: transform 2s;
+}
+.navbar-brand:focus {
+transform: rotate(180deg);
 }
 /* Nav Bar */
 
